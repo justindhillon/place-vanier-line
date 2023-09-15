@@ -16,7 +16,7 @@ export default function Home({ allPostsData }) {
   );
 }
 
-export default function Button() {
+function Button() {
   const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
 
   return (
