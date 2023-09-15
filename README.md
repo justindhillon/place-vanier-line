@@ -7,4 +7,4 @@ So I will post a poster, people will scan a qr code when they are stuck in line 
 <br><br>
 Then people can go on the website and see a graph of when it is super busy, then adjust their schedule accordingly 
 <br><br>
-The project will use next.js
+The project will use next.js & Vercel
