@@ -9,10 +9,12 @@
     "date-fns": "^2.29.3",
     "gray-matter": "^4.0.3",
     "next": "latest",
+    "node.js": "^0.0.1-security",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "remark": "^14.0.2",
-    "remark-html": "^15.0.1"
+    "remark-html": "^15.0.1",
+    "run-script": "^0.1.1"
   },
   "engines": {
     "node": ">=18"
