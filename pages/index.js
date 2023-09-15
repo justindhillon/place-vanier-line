@@ -24,8 +24,8 @@ function Button() {
 
   function handleClick() {
     setLikes(likes + 1);
-    var date = new Date();
-    var hours = date.getHours();
+    //var date = new Date();
+    //var hours = date.getHours();
     //console.log(hours);
     console.log("132");
   }
