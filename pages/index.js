@@ -22,23 +22,22 @@ function Button() {
   const [likes, setLikes] = React.useState(0);
 
   function handleClick() {
-    setLikes(likes + 1);
-    console.log(getCurrentDate());
+    console.log(getCurrentTime());
   }
 
-  function getCurrentDate(separator=''){
-
+  function getCurrentTime(separator=''){
     let newDate = new Date()
-    let date = newDate.getDate();
-    let month = newDate.getMonth() + 1;
-    let year = newDate.getFullYear();
+    let hour = newDate.getHours();
+    let minute = newDate.getMinutes();
+
+    minute = (Math.round(minute/15) * 15) % 60;
     
-    return `${year}${separator}${month<10?`0${month}`:`${month}`}${separator}${date}`
+    return `${hour}${separator}${minute}`
   }
 
   return (
     <div>
-      <button onClick={handleClick}>Likes ({likes})</button>
+      <button onClick={handleClick}>Click Me</button>
     </div>
   );
 }
