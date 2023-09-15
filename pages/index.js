@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import Date from '../components/date';
+import React from 'react';
 
 export default function Home({ allPostsData }) {
   return (
@@ -25,7 +26,6 @@ function Button() {
 
   return (
     <div>
-      {/* ... */}
       <button onClick={handleClick}>Likes ({likes})</button>
     </div>
   );
