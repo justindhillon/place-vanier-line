@@ -12,7 +12,9 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+
       <Button />
+
     </Layout>
   );
 }
@@ -22,6 +24,7 @@ function Button() {
 
   function handleClick() {
     setLikes(likes + 1);
+    console.log(Date().getHours());
   }
 
   return (
