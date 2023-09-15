@@ -24,10 +24,17 @@ function Button() {
 
   function handleClick() {
     setLikes(likes + 1);
-    //var date = new Date();
-    //var hours = date.getHours();
-    //console.log(hours);
-    console.log("132");
+    console.log(getCurrentDate());
+  }
+
+  function getCurrentDate(separator=''){
+
+    let newDate = new Date()
+    let date = newDate.getDate();
+    let month = newDate.getMonth() + 1;
+    let year = newDate.getFullYear();
+    
+    return `${year}${separator}${month<10?`0${month}`:`${month}`}${separator}${date}`
   }
 
   return (
