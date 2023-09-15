@@ -11,7 +11,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      Button();
+      <Button />
     </Layout>
   );
 }
