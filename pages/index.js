@@ -17,17 +17,16 @@ export default function Home({ allPostsData }) {
 }
 
 function Button() {
-  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+  const [likes, setLikes] = React.useState(0);
+
+  function handleClick() {
+    setLikes(likes + 1);
+  }
 
   return (
     <div>
-      <ul>
-        {names.map((name) => (
-          <li key={name}>{name}</li>
-        ))}
-      </ul>
-
-      <button>Like</button>
+      {/* ... */}
+      <button onClick={handleClick}>Likes ({likes})</button>
     </div>
   );
 }
