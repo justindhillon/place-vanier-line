@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
-import { readData } from './api/editfile';
-import { writeData } from './api/editfile';
 import React from 'react';
 
 export default function Home({ allPostsData }) {
@@ -20,8 +18,7 @@ export default function Home({ allPostsData }) {
 
 function Button() {
   function handleClick() {
-    writeData("data.txt", getCurrentTime());
-    console.log(readData("data.txt"))
+    console.log(fetch("pages/api/readfile.js"));
   }
 
   function getCurrentTime(separator=''){
