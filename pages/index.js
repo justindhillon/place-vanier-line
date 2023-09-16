@@ -1,11 +1,9 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
-import Link from 'next/link';
+import { readData }from '../lib/editfile';
+import { writeData }from '../lib/editfile';
 import React from 'react';
-import { writeFileSync } from 'fs';
-import { readFileSync } from 'fs';
 
 export default function Home({ allPostsData }) {
   return (
@@ -22,7 +20,8 @@ export default function Home({ allPostsData }) {
 
 function Button() {
   function handleClick() {
-    writeFileSync('data/chart.json', getCurrentTime());
+    writeData("data.txt", getCurrentTime());
+    console.log(readData("data.txt"))
   }
 
   function getCurrentTime(separator=''){
