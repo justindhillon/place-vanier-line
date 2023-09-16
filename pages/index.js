@@ -22,8 +22,7 @@ function Button() {
   const fs = require('fs');
 
   function handleClick() {
-    fs.writeFileSync("data.txt", getCurrentTime());
-    console.log(fs.readFileSync("data.txt").toString());
+    fs.writeFileSync('data/chart.json', getCurrentTime());
   }
 
   function getCurrentTime(separator=''){
