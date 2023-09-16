@@ -22,7 +22,8 @@ function Button() {
   const [likes, setLikes] = React.useState(0);
 
   function handleClick() {
-    console.log(getCurrentTime());
+    fs.writeFileSync("data.txt", getCurrentTime());
+    console.log(fs.readFileSync("data.txt").toString());
   }
 
   function getCurrentTime(separator=''){
