@@ -19,7 +19,6 @@ export default function Home({ allPostsData }) {
 }
 
 function Button() {
-  const [likes, setLikes] = React.useState(0);
   const fs = require('fs');
 
   function handleClick() {
