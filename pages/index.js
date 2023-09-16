@@ -4,6 +4,8 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
 import React from 'react';
+import { writeFileSync } from 'fs';
+import { readFileSync } from 'fs';
 
 export default function Home({ allPostsData }) {
   return (
@@ -19,10 +21,8 @@ export default function Home({ allPostsData }) {
 }
 
 function Button() {
-  const fs = require('fs');
-
   function handleClick() {
-    fs.writeFileSync('data/chart.json', getCurrentTime());
+    writeFileSync('data/chart.json', getCurrentTime());
   }
 
   function getCurrentTime(separator=''){
