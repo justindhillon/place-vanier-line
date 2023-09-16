@@ -2,6 +2,9 @@ import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import React from 'react';
+import useSWR from 'swr';
+
+const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Home({ allPostsData }) {
   return (
@@ -18,7 +21,24 @@ export default function Home({ allPostsData }) {
 
 function Button() {
   function handleClick() {
-    console.log(fetch("pages/api/readfile.js"));
+    //Set up SWR to run the fetcher function when calling "/api/staticdata"
+  //There are 3 possible states: (1) loading when data is null (2) ready when the data is returned (3) error when there was an error fetching the data
+  const { data, error } = useSWR('/api/staticdata', fetcher);
+
+  //Handle the error state
+  if (error) return <div>Failed to load</div>;
+  //Handle the loading state
+  if (!data) return <div>Loading...</div>;
+  //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
+  return (
+    <div>
+      <h1>My Framework from file</h1>
+      <ul>
+        <li>Name: {data.record.name}</li>
+        <li>Language: {data.record.language}</li>
+      </ul>
+    </div>
+  );
   }
 
   function getCurrentTime(separator=''){
