@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
-import { readData } from '../lib/editfile';
-import { writeData } from '../lib/editfile';
+import { readData } from './editfile';
+import { writeData } from './editfile';
 import React from 'react';
 
 export default function Home({ allPostsData }) {
