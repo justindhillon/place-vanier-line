@@ -14,7 +14,8 @@
     "react-dom": "18.2.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
-    "run-script": "^0.1.1"
+    "run-script": "^0.1.1",
+    "swr": "^2.2.2"
   },
   "engines": {
     "node": ">=18"
