@@ -11,7 +11,7 @@ function getCurrentTime(separator=''){
 }
  
 export default async function handler(request, response) {
-  await sql`INSERT INTO Database (Name, Owner) VALUES (${getCurrentTime()}, ${getCurrentTime()});`;
+  await sql`INSERT INTO Database (Time, Value) VALUES (${getCurrentTime()}, ${getCurrentTime()});`;
   const pets = await sql`SELECT * FROM Database;`;
   return response.status(200).json({ pets });
 }
