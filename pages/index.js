@@ -6,7 +6,7 @@ export default function Homepage() {
 
 function Button() {
   function handleClick() {
-    console.log("memes");
+    fetch("pages/api/add");
   }
 
   return (
