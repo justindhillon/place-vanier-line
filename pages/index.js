@@ -20,9 +20,14 @@ export default function Home({ allPostsData }) {
 }
 
 function Button() {
-  function handleClick() {
-    const { data, error } = useSWR('/api/readFile', fetcher);
-    console.log(data);
+  async function fetchData() {
+    const { data, error } = await useSWR('/api/readFile', fetcher);
+    return data;
+  }
+
+  function handleClick(event) {
+    event.preventDefault();
+    fetchData();
   }
 
   function getCurrentTime(separator=''){
