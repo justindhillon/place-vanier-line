@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React from 'react';
+import { useState } from "react";
 
 export default function Test() {
   const [candidat, setCandidat] = useState({
