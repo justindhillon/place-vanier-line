@@ -6,8 +6,7 @@ export default function Homepage() {
 
 function Button() {
   function handleClick() {
-    fetch("api/add.js");
-    console.log("Success");
+    fetch("https://placevanierline.vercel.app/api/add");
   }
 
   return (
