@@ -1,5 +1,7 @@
 export default function Homepage() {
-  <Button />
+  return (
+    <Button />
+  );
 }
 
 function Button() {
