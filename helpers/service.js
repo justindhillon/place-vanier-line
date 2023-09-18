@@ -6,8 +6,8 @@ export const service = {
 };
 
 function readFile(name) {
-    data = database.readFile(name);
-    return data;
+    // data = database.readFile(name);
+    return fetch("helpers/api/readFile.js");
 }
 
 function writeFile(name) {
