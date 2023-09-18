@@ -5,7 +5,12 @@ function getCurrentTime(separator=''){
     let hour = newDate.getHours();
     let minute = newDate.getMinutes();
   
-    minute = (Math.round(minute/15) * 15) % 60;
+    minute = (Math.round(minute/15) * 15);
+
+    if (minute == 60) {
+        minute = 0;
+        hour++;
+    }
     
     return `${hour}${separator}${minute}`
 }
