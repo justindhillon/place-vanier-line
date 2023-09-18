@@ -19,7 +19,8 @@ export default function Home({ allPostsData }) {
 
 function Button() {
   function handleClick() {
-    console.log(service.readFile());
+    data = fetch("pages/api/readFile.js");
+    console.log(data);
   }
 
   function getCurrentTime(separator=''){
