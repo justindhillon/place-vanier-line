@@ -14,32 +14,14 @@ export default function Home({ allPostsData }) {
       </Head>
 
       <Button />
-      <Test />
 
     </Layout>
   );
 }
 
-function Test() {
-  //Set up SWR to run the fetcher function when calling "/api/staticdata"
-  //There are 3 possible states: (1) loading when data is null (2) ready when the data is returned (3) error when there was an error fetching the data
-  const { data, error } = useSWR('/api/readFile', fetcher);
-
-  //Handle the error state
-  if (error) return <div>Failed to load</div>;
-  //Handle the loading state
-  if (!data) return <div>Loading...</div>;
-  //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
-  return (
-    <div>
-      <h1>My Framework from file</h1>
-    </div>
-  );
-}
-
 function Button() {
-  async function handleClick() {
-    let data = await fetch("pages/api/readFile.js");
+  function handleClick() {
+    const { data, error } = useSWR('/api/readFile', fetcher);
     console.log(data);
   }
 
