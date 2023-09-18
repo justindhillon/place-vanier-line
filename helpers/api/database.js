@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 export const database = {
     readFile,
     writeFile
