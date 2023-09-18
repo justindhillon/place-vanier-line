@@ -17,8 +17,8 @@ export default function Home({ allPostsData }) {
 }
 
 function Button() {
-  function handleClick() {
-    data = fetch("pages/api/readFile.js");
+  async function handleClick() {
+    let data = await fetch("pages/api/readFile.js");
     console.log(data);
   }
 
