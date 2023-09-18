@@ -6,7 +6,7 @@ export default function Homepage() {
 
 function Button() {
   function handleClick() {
-    fetch("pages/api/add", {method: 'POST'});
+    fetch("pages/api/add", {method: 'GET'});
   }
 
   return (
