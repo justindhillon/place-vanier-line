@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import { getSortedPostsData } from '../lib/posts';
 import React from 'react';
-import { service } from '../helpers/service';
 
 export default function Home({ allPostsData }) {
   return (
