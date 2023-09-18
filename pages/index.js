@@ -1,13 +1,12 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
+import { getSortedPostsData } from '../lib/posts';
 import React from 'react';
 import useSWR from 'swr';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-export default function Home({ initialData }) {
-  const [data, setData] = useState(initialData);
-
+export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
@@ -49,7 +48,10 @@ function Button() {
 }
 
 export async function getStaticProps() {
-  const req = await fetch('https://randomuser.me/api/?gender=female&results=10');
-  const data = await req.json();
-  return { initialData: data.results };
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
 }
