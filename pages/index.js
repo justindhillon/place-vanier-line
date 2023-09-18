@@ -59,13 +59,3 @@ await fetch("/api/myform", {
     </div>
   );
 }
-
-function getCurrentTime(separator=''){
-  let newDate = new Date()
-  let hour = newDate.getHours();
-  let minute = newDate.getMinutes();
-
-  minute = (Math.round(minute/15) * 15) % 60;
-  
-  return `${hour}${separator}${minute}`
-}
