@@ -33,10 +33,6 @@ function Test() {
   return (
     <div>
       <h1>My Framework from file</h1>
-      <ul>
-        <li>Name: {data.record.name}</li>
-        <li>Language: {data.record.language}</li>
-      </ul>
     </div>
   );
 }
