@@ -12,11 +12,12 @@ function getCurrentTime(separator=''){
         hour++;
     }
     
-    return `${hour}${separator}${minute}`
+    return hour.toString() + ":" + minute.toString()
 }
  
 export default async function handler(request, response) {
-    await sql`INSERT INTO Timebase (Time, Value) VALUES (${getCurrentTime()}, ${getCurrentTime()});`;
+    //await sql`INSERT INTO Timebase (Time, Value) VALUES (${getCurrentTime()}, ${getCurrentTime()});`;
+    console.log(getCurrentTime());
     const pets = await sql`SELECT * FROM Timebase;`;
     return response.status(200).json({ pets });
 }
