@@ -6,7 +6,9 @@ import useSWR from 'swr';
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-export default function Home() {
+export default function Home({ initialData }) {
+  const [data, setData] = useState(initialData);
+
   return (
     <Layout home>
       <Head>
@@ -48,10 +50,7 @@ function Button() {
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData,
-    },
-  };
+  const req = await fetch('https://randomuser.me/api/?gender=female&results=10');
+  const data = await req.json();
+  return { initialData: data.results };
 }
