@@ -1,4 +1,4 @@
-import { database } from "./database";
+import { database } from "./api/database";
 
 export const service = {
     readFile,
