@@ -1,5 +1,3 @@
-import { database } from "./api/database";
-
 export const service = {
     readFile,
     writeFile
@@ -11,5 +9,6 @@ function readFile(name) {
 }
 
 function writeFile(name) {
-    database.writeFile(name);
+    //database.writeFile(name);
+    console.log("memes")
 }
