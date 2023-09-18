@@ -9,7 +9,7 @@ function Button() {
 
   return (
     <div>
-      <button onClick={handleClick}>Likes ({likes})</button>
+      <button onClick={handleClick}>Likes</button>
     </div>
   );
 }
