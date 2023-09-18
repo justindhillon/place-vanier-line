@@ -1,5 +1,3 @@
-import { fs } from fs;
-
 export const database = {
     readFile,
     writeFile
