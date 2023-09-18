@@ -16,7 +16,7 @@ function getCurrentTime(separator=''){
 }
  
 export default async function handler(request, response) {
-    await sql`UPDATE Timebase SET Value = '${await sql`SELECT Value FROM Timebase WHERE Time=${getCurrentTime()};` + 1}' WHERE Time = ${getCurrentTime()};`;
+    await sql`UPDATE Timebase SET Value = Value + 1 WHERE Time = ${getCurrentTime()};`;
     const pets = await sql`SELECT * FROM Timebase;`;
     return response.status(200).json({ pets });
 }
