@@ -6,8 +6,7 @@ export default async function handler(request, response) {
             await sql`INSERT INTO Timebase (Time, Value) VALUES (${hour.toString() + ":" + minute.toString()}, ${0});`;
         }
     }
-
-    await sql`INSERT INTO Timebase (Time, Value) VALUES (${getCurrentTime()}, ${getCurrentTime()});`;
+    
     const pets = await sql`SELECT * FROM Timebase;`;
     return response.status(200).json({ pets });
 }
