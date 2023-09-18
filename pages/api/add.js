@@ -11,6 +11,10 @@ function getCurrentTime(separator=''){
         minute = 0;
         hour++;
     }
+
+    if (hour == 24) {
+        hour = 0;
+    }
     
     return hour.toString() + ":" + minute.toString()
 }
