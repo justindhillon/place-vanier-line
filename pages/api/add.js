@@ -2,7 +2,7 @@ import { sql } from '@vercel/postgres';
 
 function getCurrentTime(separator=''){
     let newDate = new Date()
-    let hour = newDate.getHours();
+    let hour = newDate.getUTCHours();
     let minute = newDate.getMinutes();
   
     minute = (Math.round(minute/15) * 15);
