@@ -12,9 +12,9 @@ function getCurrentTime(separator=''){
         hour++;
     }
 
-    hours = hours % 24
+    hour = hour % 24;
     
-    return hour.toString() + ":" + minute.toString()
+    return hour.toString() + ":" + minute.toString();
 }
  
 export default async function handler(request, response) {
