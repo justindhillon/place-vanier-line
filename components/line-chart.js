@@ -4,9 +4,11 @@ import { Line } from 'react-chartjs-2'
 import { Chart as ChartJS } from 'chart.js/auto'
 
 export default function LineChart () {
+    let raw_data = [];
+
     fetch('https://placevanierline.vercel.app/api/get-data', { method: 'POST' })
     .then(response => response.json())
-    .then(response => console.log(response.pets.rows)); 
+    .then(response => raw_data = response.pets.rows); 
 
     const UserData = [
         {
