@@ -54,7 +54,7 @@ export default function Homepage() {
     ],
   });
 
-  fetch('https://reqbin.com/echo/get/json', {
+  fetch('https://placevanierline.vercel.app/api/get-data', {
     method: 'GET',
     headers: {
       'Accept': 'application/json',
