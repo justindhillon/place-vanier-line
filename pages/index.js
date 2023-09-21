@@ -61,7 +61,9 @@ export default function Homepage() {
     },
   })
     .then(response => response.json())
-    .then(response => console.log(JSON.stringify(response)))
+    .then(response => {const raw_data = JSON.stringify(response)})
+
+  console.log(raw_data);
 
   return (
     <div>
