@@ -54,9 +54,9 @@ export default function Homepage() {
     ],
   });
 
-  raw_data = fetch("https://placevanierline.vercel.app/api/get-data");
+  const raw_data = fetch("https://placevanierline.vercel.app/api/get-data");
   
-  data = raw_data.pets;
+  const data = raw_data.pets;
 
   console.log(data);
 
