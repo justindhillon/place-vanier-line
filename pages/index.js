@@ -65,7 +65,7 @@ export default function Homepage() {
     .then(response => response.json())
     .then(response => raw_data = JSON.stringify(response))
 
-  data = JSON.parse(raw_data);
+  let data = JSON.parse(raw_data);
   console.log(data.pets);
 
   return (
