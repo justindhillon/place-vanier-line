@@ -57,7 +57,7 @@ export default function Homepage() {
   return (
     <div>
       <Button />
-      <LineChart data = {data} />
+      <LineChart data = {userData} />
     </div>
   );
 }
