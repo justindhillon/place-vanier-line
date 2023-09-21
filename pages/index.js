@@ -54,7 +54,14 @@ export default function Homepage() {
     ],
   });
 
-  console.log(fetch("https://placevanierline.vercel.app/api/get-data"));
+  fetch('https://reqbin.com/echo/get/json', {
+    method: 'GET',
+    headers: {
+      'Accept': 'application/json',
+    },
+  })
+    .then(response => response.json())
+    .then(response => console.log(JSON.stringify(response)))
 
   return (
     <div>
