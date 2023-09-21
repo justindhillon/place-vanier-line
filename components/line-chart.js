@@ -10,6 +10,8 @@ export default function LineChart () {
     .then(response => response.json())
     .then(response => raw_data = response.pets.rows); 
 
+    console.log(raw_data);
+
     const UserData = [
         {
           id: 1,
