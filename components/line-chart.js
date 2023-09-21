@@ -60,5 +60,5 @@ export default function LineChart () {
         ],
       });
 
-    return <Line data={UserData} />
+    return <Line data={userData} />
 }
