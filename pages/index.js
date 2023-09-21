@@ -56,7 +56,7 @@ export default function Homepage() {
 
   fetch('https://placevanierline.vercel.app/api/get-data', { method: 'POST' })
     .then(response => response.json())
-    .then(response => console.log(response.pets)); 
+    .then(response => console.log(response.pets.rows)); 
 
   return (
     <div>
