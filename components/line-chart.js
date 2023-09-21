@@ -8,7 +8,7 @@ export default function LineChart () {
 
     fetch('https://placevanierline.vercel.app/api/get-data', { method: 'POST' })
     .then(response => response.json())
-    .then(response => raw_data = response.pets.rows); 
+    .then(response => raw_data = response.pets.rows.json()); 
 
     console.log(raw_data);
 
