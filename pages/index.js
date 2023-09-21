@@ -54,7 +54,7 @@ export default function Homepage() {
     ],
   });
 
-  const raw_data = []
+  let raw_data = []
 
   fetch('https://placevanierline.vercel.app/api/get-data', {
     method: 'GET',
