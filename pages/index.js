@@ -56,7 +56,7 @@ export default function Homepage() {
 
   const raw_data = fetch("https://placevanierline.vercel.app/api/get-data");
   
-  const data = raw_data.pet;
+  const data = raw_data.rows;
 
   console.log(data);
 
