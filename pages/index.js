@@ -58,7 +58,7 @@ export default function Homepage() {
   
   const data = raw_data.pets.rows;
 
-  console.log(data);
+  console.log(JSON.stringify(raw_data));
 
   return (
     <div>
