@@ -54,6 +54,8 @@ export default function Homepage() {
     ],
   });
 
+  console.log(fetch("https://placevanierline.vercel.app/api/get-data"));
+
   return (
     <div>
       <Button />
