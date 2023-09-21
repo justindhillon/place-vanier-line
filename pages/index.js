@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "../components/button";
 import LineChart from "../components/line-chart";
 
 const UserData = [
@@ -62,18 +63,6 @@ export default function Homepage() {
     <div>
       <Button />
       <LineChart data={userData} />
-    </div>
-  );
-}
-
-function Button() {
-  function handleClick() {
-    fetch("https://placevanierline.vercel.app/api/add");
-  }
-
-  return (
-    <div>
-      <button onClick={handleClick}>Likes</button>
     </div>
   );
 }
