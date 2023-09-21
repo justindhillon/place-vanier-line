@@ -19,6 +19,4 @@ function getCurrentTime(separator=''){
  
 export default async function handler(request, response) {
     await sql`UPDATE Database SET Value = Value::DECIMAL + 1 WHERE Time = ${getCurrentTime()};`;
-    const pets = await sql`SELECT * FROM Database;`;
-    return response.status(200).json({ pets });
 }
