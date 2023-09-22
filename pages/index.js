@@ -5,7 +5,9 @@ import LineChart from "../components/line-chart";
 export default function Homepage() {
   return (
     <div>
+      <br />
       <Button />
+      <br />
       <LineChart />
     </div>
   );

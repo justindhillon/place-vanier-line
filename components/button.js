@@ -5,7 +5,7 @@ export default function Button() {
   
     return (
       <div>
-        <button onClick={handleClick}>Likes</button>
+        <button onClick={handleClick}>Submit Time</button>
       </div>
     );
 }
