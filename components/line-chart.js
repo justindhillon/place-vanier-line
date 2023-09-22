@@ -6,11 +6,7 @@ import { Chart as ChartJS } from 'chart.js/auto'
 export default function LineChart () {
     fetch('https://placevanierline.vercel.app/api/get-data', { method: 'POST' })
     .then(response => response.json())
-    .then(response => {
-      for (let i = 0; i <= 95; i++) {
-        console.log(response.pets.rows.i)
-      }
-    }); 
+    .then(response => console.log(response.pets.rows)); 
 
     const UserData = [
         {
