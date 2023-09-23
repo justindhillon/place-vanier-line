@@ -14,8 +14,8 @@ async function getData() {
   return data;
 }
 
-export default function LineChart () {
-  console.log(getData());
+export default async function LineChart () {
+  console.log(await getData());
     const UserData = [
         {
           id: 1,
