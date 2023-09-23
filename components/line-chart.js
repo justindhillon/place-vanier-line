@@ -1,27 +1,10 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Line } from 'react-chartjs-2'
 import { Chart as ChartJS } from 'chart.js/auto'
 
-async function fetchData() {
-  let raw_data;
-
-  const res = await fetch('https://placevanierline.vercel.app/api/get-data');
-  raw_data = await res.json();
-
-  const data = await raw_data.pets.rows;
-
-  return data;
-}
-
-async function finalData() {
-  const data = await fetchData();
-  return data;
-}
-
 export default function LineChart () {
-  console.log(finalData());
-    const UserData = [
+    /*const UserData = [
         {
           id: 1,
           year: 2016,
@@ -71,7 +54,20 @@ export default function LineChart () {
             borderWidth: 2,
           },
         ],
-      });
+      });*/
 
-    return <Line data={userData} />
+  const [users, setUsers] = useState([]);
+
+  function fetchData() {
+    const res = fetch('https://placevanierline.vercel.app/api/get-data').json();
+    setUsers(res.pets.rows);
+  }
+  
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  console.log(users);
+
+  return <div>Hello</div>//<Line data={userData} />
 }
