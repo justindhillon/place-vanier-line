@@ -3,10 +3,17 @@ import { useState } from "react";
 import { Line } from 'react-chartjs-2'
 import { Chart as ChartJS } from 'chart.js/auto'
 
+async function getData() {
+  let data;
+
+  const res = await fetch('https://placevanierline.vercel.app/api/get-data', { method: 'POST' });
+  data = await res.pets.rows;
+
+  return data;
+}
+
 export default function LineChart () {
-    fetch('https://placevanierline.vercel.app/api/get-data', { method: 'POST' })
-    .then(response => response.json())
-    .then(response => console.log(response.pets.rows)); 
+    console.log(getData());
 
     const UserData = [
         {
