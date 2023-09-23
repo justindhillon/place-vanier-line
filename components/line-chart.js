@@ -48,6 +48,8 @@ export default function LineChart () {
         },
       ];
 
+      console.log(UserData);
+
       const [userData, setUserData] = useState({
         labels: UserData.map((data) => data.year),
         datasets: [
