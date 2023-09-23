@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Line } from 'react-chartjs-2'
 import { Chart as ChartJS } from 'chart.js/auto'
 
-async function getData() {
+async function fetchData() {
   let raw_data;
 
   const res = await fetch('https://placevanierline.vercel.app/api/get-data');
@@ -14,8 +14,13 @@ async function getData() {
   return data;
 }
 
-export default async function LineChart () {
-  console.log(await getData());
+async function finalData() {
+  const data = await fetchData();
+  return data;
+}
+
+export default function LineChart () {
+  console.log(finalData());
     const UserData = [
         {
           id: 1,
