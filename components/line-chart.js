@@ -7,9 +7,9 @@ async function getData() {
   let data;
 
   const res = await fetch('https://placevanierline.vercel.app/api/get-data');
-  data = await res.pets;
+  data = await res.json();
 
-  console.log(data);
+  console.log(data.pets.rows);
 
   return data;
 }
