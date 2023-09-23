@@ -9,12 +9,12 @@ async function getData() {
   const res = await fetch('https://placevanierline.vercel.app/api/get-data');
   data = await res.json();
 
+  console.log(data);
+
   return data;
 }
 
 export default function LineChart () {
-    console.log(getData());
-
     const UserData = [
         {
           id: 1,
