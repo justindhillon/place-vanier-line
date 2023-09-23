@@ -4,18 +4,18 @@ import { Line } from 'react-chartjs-2'
 import { Chart as ChartJS } from 'chart.js/auto'
 
 async function getData() {
-  let data;
+  let raw_data;
 
   const res = await fetch('https://placevanierline.vercel.app/api/get-data');
-  data = await res.json();
+  raw_data = await res.json();
 
-  console.log(data.pets.rows);
+  const data = await raw_data.pets.rows;
 
   return data;
 }
 
 export default function LineChart () {
-  getData();
+  console.log(getData());
     const UserData = [
         {
           id: 1,
@@ -48,8 +48,6 @@ export default function LineChart () {
           userLost: 234,
         },
       ];
-
-      console.log(UserData);
 
       const [userData, setUserData] = useState({
         labels: UserData.map((data) => data.year),
