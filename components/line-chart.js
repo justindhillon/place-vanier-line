@@ -15,6 +15,7 @@ async function getData() {
 }
 
 export default function LineChart () {
+  getData();
     const UserData = [
         {
           id: 1,
