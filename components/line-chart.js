@@ -6,8 +6,8 @@ import { Chart as ChartJS } from 'chart.js/auto'
 async function getData() {
   let data;
 
-  const res = await fetch('https://placevanierline.vercel.app/api/get-data', { method: 'POST' });
-  data = await res.pets.rows;
+  const res = await fetch('https://placevanierline.vercel.app/api/get-data');
+  data = await res.json();
 
   return data;
 }
