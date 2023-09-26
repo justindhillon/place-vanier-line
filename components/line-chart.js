@@ -15,5 +15,15 @@ export default function LineChart () {
       fetchData();
   }, []);
   
-  return <div>{console.log(posts[0])}</div>
+  return (
+    <div>
+      {posts.length > 0 && (
+        <ul>
+          {posts.map(user => (
+            <li>{user.time}{user.value}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
 }
