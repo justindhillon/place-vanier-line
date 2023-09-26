@@ -60,8 +60,7 @@ export default function LineChart () {
 
   function fetchData() {
     const res = fetch('https://placevanierline.vercel.app/api/get-data');
-    const fix = res.json();
-    setUsers(fix.pets.rows);
+    setUsers(res.pets.rows);
   }
 
   useEffect(() => {
