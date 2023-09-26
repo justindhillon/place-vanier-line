@@ -62,12 +62,20 @@ export default function LineChart () {
     const res = fetch('https://placevanierline.vercel.app/api/get-data').json();
     setUsers(res.pets.rows);
   }
-  
+
   useEffect(() => {
-    fetchData();
-  }, []);
-
-  console.log(users);
-
-  return <div>Hello</div>//<Line data={userData} />
+    fetchData()
+  }, [])
+  
+  return (
+    <div>
+      {users.length > 0 && (
+        <ul>
+          {users.map(user => (
+            <li>{user[0]}</li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
 }
