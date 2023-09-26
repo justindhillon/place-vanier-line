@@ -69,13 +69,7 @@ export default function LineChart () {
   
   return (
     <div>
-      {users.length > 0 && (
-        <ul>
-          {users.map(user => (
-            <li>{user[0]}</li>
-          ))}
-        </ul>
-      )}
+      <p>{users}</p>
     </div>
   );
 }
