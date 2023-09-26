@@ -34,5 +34,5 @@ export default function LineChart () {
       fetchData();
   }, []);
 
-  return <Line data={data} />
+  return <Line data={posts} />
 }
