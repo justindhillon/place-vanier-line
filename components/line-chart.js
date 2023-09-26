@@ -59,8 +59,9 @@ export default function LineChart () {
   const [users, setUsers] = useState([]);
 
   function fetchData() {
-    const res = fetch('https://placevanierline.vercel.app/api/get-data').json();
-    setUsers(res.pets.rows);
+    const res = fetch('https://placevanierline.vercel.app/api/get-data');
+    const fix = res.json();
+    setUsers(fix.pets.rows);
   }
 
   useEffect(() => {
