@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Line } from 'react-chartjs-2'
 import { Chart as ChartJS } from 'chart.js/auto'
+
 export default function LineChart () {
   const [posts, setPosts] = useState([]);
   
@@ -18,7 +19,7 @@ export default function LineChart () {
     labels: posts.map((info) => info.time),
     datasets: [
       {
-        label: "Users Gained",
+        label: "People Stuck in Line",
         data: posts.map((info) => info.value),
         backgroundColor: [
           "rgba(75,192,192,1)",
