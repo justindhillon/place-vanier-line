@@ -12,11 +12,11 @@ export default function LineChart () {
           const res = await axios.get('https://placevanierline.vercel.app/api/get-data'); 
           
           setData(useState({
-            labels: res.data.pets.rows.map((info) => info.time),
+            labels: res.data.pets.rows[0],
             datasets: [
               {
                 label: "Users Gained",
-                data: res.data.pets.rows.map((info) => info.value),
+                data: res.data.pets.rows[1],
                 backgroundColor: [
                   "rgba(75,192,192,1)",
                   "#ecf0f1",
