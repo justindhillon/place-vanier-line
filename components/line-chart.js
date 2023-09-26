@@ -15,5 +15,5 @@ export default function LineChart () {
       fetchData();
   }, []);
   
-  return <div>{console.log(posts)}</div>
+  return <div>{console.log(posts[0])}</div>
 }
