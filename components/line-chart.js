@@ -10,7 +10,7 @@ export default function LineChart () {
   useEffect( () => { 
       async function fetchData() {
           const res = await axios.get('https://placevanierline.vercel.app/api/get-data'); 
-          setPosts(res.pets);
+          setPosts(res);
       }
       fetchData();
   }, []);
