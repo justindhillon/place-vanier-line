@@ -13,8 +13,11 @@ function getCurrentTime(separator=''){
     }
 
     hour = hour % 24;
+
+    let formattedHour = hour.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })
+    let formattedMinute = minute.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })
     
-    return hour.toString() + ":" + minute.toString();
+    return formattedHour.toString() + ":" + formattedMinute.toString();
 }
  
 export default async function handler(request, response) {
