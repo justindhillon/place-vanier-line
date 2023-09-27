@@ -1,3 +1,5 @@
+import styles from './button.module.css'
+
 export default function Button() {
     function handleClick() {
       fetch("https://placevanierline.vercel.app/api/add");
@@ -6,7 +8,7 @@ export default function Button() {
     return (
       <div class="button-container">
         <h1>Stuck in line?</h1>
-        <button class="button-3" onClick={handleClick}>PRESS ME</button>
+        <button class="styles.button-3" onClick={handleClick}>PRESS ME</button>
       </div>
     );
 }
