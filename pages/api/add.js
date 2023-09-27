@@ -22,9 +22,9 @@ function getCurrentTime(separator=''){
  
 export default async function handler(request, response) {
     let time = getCurrentTime();
-    
+
     if (7 <= Number(time.charAt(0)) && Number(time.charAt(0)) < 22) { 
-        await sql`UPDATE Base SET Value = Value::DECIMAL + 1 WHERE Time = ${time};`;
+        await sql`UPDATE Database SET Value = Value::DECIMAL + 1 WHERE Time = ${time};`;
     }
 
     return response.status(200).json({ "success" : "success" });
