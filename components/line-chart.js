@@ -29,5 +29,9 @@ export default function LineChart () {
     ],
   }
 
-  return <Line style="max-width:10em;" data={data} />
+  return (
+    <div style="max-width:10em">
+      <Line data={data} />
+    </div>
+  )
 }
