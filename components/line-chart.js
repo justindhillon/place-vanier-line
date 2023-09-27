@@ -30,7 +30,7 @@ export default function LineChart () {
   }
 
   return (
-    <div style="max-width:10em">
+    <div style="max-width: 10em;">
       <Line data={data} />
     </div>
   )
