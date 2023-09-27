@@ -29,5 +29,5 @@ export default function LineChart () {
     ],
   }
 
-  return <div class="chart-container" style={{height:"70vw"}}><Line data={data} /></div>
+  return <div class="chart-container" style={{maxWidth:"100em"}}><Line data={data} /></div>
 }
