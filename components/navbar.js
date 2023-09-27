@@ -19,7 +19,7 @@ export default function Navbar() {
       <nav className={`nav`}>
         <Link href={"/"}>
           <a>
-            <h1 className="logo">PlaceVanierLine</h1>
+            <h1>PlaceVanierLine</h1>
           </a>
         </Link>
         <div
