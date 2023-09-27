@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import React, { useState } from "react";
 import NavItem from "../components/nav-item.js";
 
@@ -7,7 +6,7 @@ const MENU_LIST = [
   { text: "Graph", href: "/" },
   { text: "</> Source Code", href: "https://github.com/justindhillon/place-vanier-rush-hour" },
   { text: "Twitter", href: "https://twitter.com/justindhillon0" },
-  { text: "Gmail", href: "https://mail.google.com/mail/u/?authuser=justin.singh.dhillon@gmail.com" },
+  { text: "Email", href: "https://mail.google.com/mail/u/?authuser=justin.singh.dhillon@gmail.com" },
 ];
 
 export default function Navbar() {
