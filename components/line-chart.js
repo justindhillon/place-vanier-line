@@ -29,5 +29,9 @@ export default function LineChart () {
     ],
   }
 
-  return <div class="chart-container"><Line data={data} /></div>
+  var options = {
+    maintainAspectRatio: false,
+  }
+
+  return <div class="chart-container"><Line data={data} options={options} /></div>
 }
