@@ -19,10 +19,11 @@ export default function LineChart () {
     labels: posts.map((info) => info.time),
     datasets: [
       {
-        fillColor : "rgba(220,220,220,0.5)",
-        strokeColor : "rgba(220,220,220,1)",
-        pointColor : "rgba(220,220,220,1)",
-        pointStrokeColor : "#fff",
+        backgroundColor: "rgba(255,99,132,0.2)",
+        borderColor: "rgba(255,99,132,1)",
+        borderWidth: 2,
+        hoverBackgroundColor: "rgba(255,99,132,0.4)",
+        hoverBorderColor: "rgba(255,99,132,1)",
         label: "Number of people stuck in line",
         data: posts.map((info) => info.value),
       },
