@@ -1,4 +1,3 @@
-import Button from "../components/button";
 import Navbar from '../components/navbar';
 import LineChart from "../components/line-chart";
 
