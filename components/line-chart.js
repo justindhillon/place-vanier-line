@@ -19,7 +19,6 @@ export default function LineChart () {
     labels: posts.map((info) => info.time),
     datasets: [
       {
-        label: "People Stuck in Line",
         data: posts.map((info) => info.value),
         backgroundColor: [
           "rgba(75,192,192,1)",
