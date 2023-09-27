@@ -22,6 +22,9 @@ nav{
   align-items: center;
   background-color: #f1f1f1;
 }
+bar{
+  max-width: 10em;
+}
 .nav__menu-bar{
   display: flex;
   flex-direction: column;
