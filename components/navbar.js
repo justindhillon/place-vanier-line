@@ -4,7 +4,7 @@ import NavItem from "../components/nav-item.js";
 
 const MENU_LIST = [
   { text: "Graph", href: "/" },
-  { text: "</> Source Code", href: "https://github.com/justindhillon/place-vanier-rush-hour" },
+  { text: "</> Source Code", href: "https://github.com/justindhillon/place-vanier-line" },
   { text: "Twitter", href: "https://twitter.com/justindhillon0" },
   { text: "Email", href: "https://mail.google.com/mail/u/?authuser=justin.singh.dhillon@gmail.com" },
 ];
