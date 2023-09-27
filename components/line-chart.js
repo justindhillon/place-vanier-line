@@ -30,8 +30,6 @@ export default function LineChart () {
   }
 
   return (
-    <div className={`chart`}>
-      <Line width="100" data={data} />
-    </div>
+    <Line width="10" data={data} />
   )
 }
