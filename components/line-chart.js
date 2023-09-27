@@ -31,7 +31,7 @@ export default function LineChart () {
 
   return (
     <div className={`chart`}>
-      <Line data={data} />
+      <Line width="100" data={data} />
     </div>
   )
 }
