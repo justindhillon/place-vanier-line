@@ -29,5 +29,5 @@ export default function LineChart () {
     ],
   }
 
-  return <Line data={data} height={"50%"} />
+  return <Line data={data} height={"100%"} />
 }
