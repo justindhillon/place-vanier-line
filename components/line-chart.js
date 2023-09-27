@@ -19,10 +19,10 @@ export default function LineChart () {
     labels: posts.map((info) => info.time),
     datasets: [
       {
-        fillColor : "rgba(220,220,220,0.5)",
+        fillColor : "rgba(46,164,79,0.5)",
         fill: true,
-        strokeColor : "rgba(220,220,220,1)",
-        pointColor : "rgba(220,220,220,1)",
+        strokeColor : "rgba(46,164,79,1)",
+        pointColor : "rgba(46,164,79,1)",
         pointStrokeColor : "#fff",
         label: "People Stuck In Place Vanier Line",
         data: posts.map((info) => info.value),
