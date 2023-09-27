@@ -30,6 +30,6 @@ export default function LineChart () {
   }
 
   return (
-    <Line width="10" data={data} />
+    <Line height="10" data={data} />
   )
 }
