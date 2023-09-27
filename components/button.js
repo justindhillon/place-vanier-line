@@ -8,7 +8,7 @@ export default function Button() {
     return (
       <div class="button-container">
         <h1>Stuck in line?</h1>
-        <button class="styles.button-3" onClick={handleClick}>PRESS ME</button>
+        <button class={styles.button} onClick={handleClick}>PRESS ME</button>
       </div>
     );
 }
