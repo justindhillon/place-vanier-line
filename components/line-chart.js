@@ -30,6 +30,6 @@ export default function LineChart () {
   }
 
   return (
-    <Line data={data} width={"30%"} />
+    <Line data={data} height="200px" width="200px" options={{ maintainAspectRatio: false }} />
   )
 }
