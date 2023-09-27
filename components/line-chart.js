@@ -24,7 +24,7 @@ export default function LineChart () {
         strokeColor : "rgba(220,220,220,1)",
         pointColor : "rgba(220,220,220,1)",
         pointStrokeColor : "#fff",
-        label: "Number of people stuck in line",
+        label: "People Stuck In Place Vanier Line",
         data: posts.map((info) => info.value),
       },
     ],
