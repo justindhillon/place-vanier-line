@@ -29,6 +29,7 @@ export default function Navbar() {
           <div></div>
           <div></div>
           <div></div>
+          <div></div>
         </div>
         <div className={`${navActive ? "active" : ""} nav__menu-list`}>
           {MENU_LIST.map((menu, idx) => (
