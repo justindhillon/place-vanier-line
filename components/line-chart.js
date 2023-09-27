@@ -29,5 +29,5 @@ export default function LineChart () {
     ],
   }
 
-  return <div class="chart-container" style={"{position: relative; height:40vh; width:80vw"}><Line data={data} height={"100%"} /></div>
+  return <div class="chart-container" style={"{position: relative; height:40vh; width:80vw"}><Line data={data} /></div>
 }
