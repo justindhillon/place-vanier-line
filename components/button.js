@@ -4,8 +4,9 @@ export default function Button() {
     }
   
     return (
-      <div>
-        <button onClick={handleClick}>Submit Time</button>
+      <div class="button-container">
+        <h1>Stuck in line?</h1>
+        <button onClick={handleClick}>PRESS ME</button>
       </div>
     );
 }

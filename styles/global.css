@@ -68,6 +68,11 @@ nav{
   max-width: 150vh;
 }
 
+.button-container {
+  position: relative;
+  margin: auto;
+}
+
 .center{
   min-height: 600px;
   display: flex;
