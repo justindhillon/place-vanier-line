@@ -11,7 +11,7 @@ export default function Homepage() {
       <LineChart />
       <br />
       <AboutWebsite />
-      <Footer
+      <Footer />
     </div>
   );
 }
