@@ -6,7 +6,7 @@ import { Colors } from "chart.js";
 const MENU_LIST = [
   { text: "Graph", href: "/" },
   { text: "</> Source Code", href: "https://github.com/justindhillon/place-vanier-line" },
-  { text: "About Me", href: "https://placevanierline.vercel.app/record-time" },
+  { text: "About Me", href: "https://placevanierline.vercel.app/about-me" },
 ];
 
 export default function Navbar() {
