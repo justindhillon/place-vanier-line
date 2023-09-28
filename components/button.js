@@ -13,7 +13,9 @@ export default function Button() {
         <h1 style={{fontSize: "3em"}}>Stuck in line?</h1>
         <br />
         <br />
+        <a href='https://placevanierline.vercel.app/'>
         <button class={styles.button} onClick={handleClick}>PRESS ME</button>
+        </a>
       </div>
     );
 }
