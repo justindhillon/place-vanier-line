@@ -6,7 +6,7 @@ export default function Button() {
     }
   
     return (
-      <div class="button-container">
+      <div class={styles.button-container}>
         <br />
         <br />
         <h1 style={{fontSize: "3em"}}>Stuck in line?</h1>
