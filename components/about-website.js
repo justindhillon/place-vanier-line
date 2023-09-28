@@ -3,7 +3,7 @@ export default function AboutWebsite() {
         <div style={{background: "#f1f1f1"}}>
             <br />
             <br />
-            <p style={{width: "90vw"}}>
+            <p style={{width: "90vw", margin: auto;}}>
                 This project is created with the goal of solving rush hour at place vanier.
                 There is a poster at the place vanier food hall, which you can scan when you are stuck in line.
                 Once recorded, it will update the graph on the website, so others can see when it is the most busy.
