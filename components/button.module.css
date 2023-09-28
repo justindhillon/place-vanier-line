@@ -22,8 +22,8 @@
     vertical-align: middle;
     white-space: nowrap;
     font-size: 3em;
-    width: auto;
-    height: auto;
+    width: 1em;
+    height: 1em;
   }
   
   .button:focus:not(:focus-visible):not(.focus-visible) {
