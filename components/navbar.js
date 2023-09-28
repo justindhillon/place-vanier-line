@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import NavItem from "../components/nav-item.js";
+import { Colors } from "chart.js";
 
 const MENU_LIST = [
   { text: "Graph", href: "/" },
@@ -18,7 +19,7 @@ export default function Navbar() {
       <nav className={`nav`}>
         <Link href={"/"}>
           <a>
-            <h1>PlaceVanierLine</h1>
+            <h1 style={{colors:"red"}}>PlaceVanierLine</h1>
           </a>
         </Link>
         <div
