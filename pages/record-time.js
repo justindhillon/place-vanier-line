@@ -8,11 +8,7 @@ export default function Homepage() {
       <Navbar />
       <br />
       <Button />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <br /><br /><br /><br /><br />
       <AboutWebsite />
     </div>
   );
