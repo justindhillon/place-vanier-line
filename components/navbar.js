@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import NavItem from "../components/nav-item.js";
+import styles from './navbar.module.css'
 
 const MENU_LIST = [
   { text: "Graph", href: "/" },

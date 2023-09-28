@@ -1,6 +1,6 @@
 export default function AboutWebsite() {
     return (
-        <div>
+        <div class="container">
             <br />
             <p>
                 This project is created with the goal of solving rush hour at place vanier.
@@ -8,6 +8,7 @@ export default function AboutWebsite() {
                 Once recorded, it will update the graph on the website, so others can see when it is the most busy.
                 With that knowlage we can solve world hunger (or get our food sooner)
             </p>
+            <br />
             <br />
         </div>
     )
