@@ -52,7 +52,7 @@
   }
   
   .button:active {
-    background-color: #2b93d4;
+    background-color: #1f799a;
     box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
   }
   

@@ -2,6 +2,7 @@ export default function AboutWebsite() {
     return (
         <div class="container">
             <br />
+            <br />
             <p>
                 This project is created with the goal of solving rush hour at place vanier.
                 There is a poster at the place vanier food hall, which you can scan when you are stuck in line.
