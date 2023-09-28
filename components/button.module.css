@@ -21,8 +21,8 @@
     touch-action: manipulation;
     vertical-align: middle;
     white-space: nowrap;
-    width: 30em;
-    height: 10em;
+    width: 24em;
+    height: 8em;
   }
   
   .button:focus:not(:focus-visible):not(.focus-visible) {
