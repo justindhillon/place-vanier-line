@@ -23,6 +23,7 @@
     white-space: nowrap;
     width: 24em;
     height: 8em;
+    font-size: 3em;
   }
   
   .button:focus:not(:focus-visible):not(.focus-visible) {
