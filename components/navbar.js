@@ -19,7 +19,7 @@ export default function Navbar() {
       <nav className={`nav`}>
         <Link href={"/"}>
           <a>
-            <h1 style={{colors:"#2596be"}}>PlaceVanierLine</h1>
+            <h1 style={{color:"#2596be"}}>PlaceVanierLine</h1>
           </a>
         </Link>
         <div

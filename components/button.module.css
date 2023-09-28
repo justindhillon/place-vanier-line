@@ -4,7 +4,7 @@
 
 .button {
     appearance: none;
-    background-color: #2596be;
+    background-color: #34a4ec;
     border: 1px solid rgba(27, 31, 35, .15);
     border-radius: 6px;
     box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
@@ -36,7 +36,7 @@
   }
   
   .button:hover {
-    background-color: #34a4ec;
+    background-color: #2596be;
   }
   
   .button:focus {
