@@ -5,3 +5,7 @@
   max-height: 100vw;
   max-width: 150vh;
 }
+
+.container {
+  background-color: #f1f1f1;
+}
