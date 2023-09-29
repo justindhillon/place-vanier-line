@@ -9,7 +9,6 @@ export default function Homepage() {
       <Navbar />
       <Button />
       <AboutWebsite />
-      <br />
       <Footer />
     </div>
   );
