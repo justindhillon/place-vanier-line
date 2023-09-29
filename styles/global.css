@@ -9,10 +9,8 @@
 .main_div {
   text-align:center;
   position: relative;
-  left: 100px;
-  height: 200px;
-  background-color: green;
 }
+
 .sub_div {
   position: absolute;
   bottom: 0px;
