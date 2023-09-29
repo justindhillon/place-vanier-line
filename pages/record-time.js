@@ -7,8 +7,9 @@ export default function Homepage() {
     <div>
       <Navbar />
       <Button />
-      <br />
       <AboutWebsite />
+      <br />
+      <Footer />
     </div>
   );
 }
