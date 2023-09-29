@@ -6,11 +6,6 @@
   max-width: 150vh;
 }
 
-.text {
-  background: "#f1f1f1";
-  text-align: center;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
 * {
   margin: 0;
