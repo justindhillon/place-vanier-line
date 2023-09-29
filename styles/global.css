@@ -10,11 +10,8 @@
   text-align:center;
   display: grid;
   grid-template-areas: 'header header header header'
-                       'left content content right'
-                       'left content content right'
                        'footer footer footer footer';
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(30vh, auto);
 }
 
 .header {
