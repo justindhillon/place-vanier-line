@@ -4,7 +4,7 @@ import Navbar from '../components/navbar';
 
 export default function Homepage() {
   return (
-    <div style={{overflow: "scroll"}}>
+    <div>
       <Navbar />
       <Button />
       <br />
