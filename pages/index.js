@@ -4,7 +4,7 @@ import AboutWebsite from '../components/about-website';
 
 export default function Homepage() {
   return (
-    <div>
+    <div style={{height:"100vh"}}>
       <Navbar />
       <br />
       <LineChart />
