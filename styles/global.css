@@ -15,10 +15,10 @@
   background: gray;
   width: 100%;
   bottom: 0;
+  background-color: "#f1f1f1";
 }
 
 #search {
-  background-color: "#f1f1f1";
   height: 5000px;
   overflow-y: scroll;
 }
