@@ -8,13 +8,13 @@
 
 .main_div {
   text-align:center;
-  position: relative;
-  height: 1000em;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
 }
 
 .sub_div {
-  position: absolute;
-  bottom: 0px;
+  flex: 0 1 100px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
