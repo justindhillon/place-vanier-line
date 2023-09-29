@@ -1,6 +1,6 @@
 export default function AboutWebsite() {
     return (
-        <div class="main_div">
+        <div class="container">
             <div style={{background: "#f1f1f1"}}>
                 <br />
                 <br />
