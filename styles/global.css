@@ -6,14 +6,9 @@
   max-width: 150vh;
 }
 
-.container {
-  text-align:center;
-  position: relative;
-}
-
-.header {
+.text {
   background-color: "#f1f1f1";
-  grid-area: header;
+  text-align: center;
 }
 
 .footer {
