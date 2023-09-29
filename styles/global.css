@@ -17,6 +17,11 @@
   grid-auto-rows: minmax(30vh, auto);
 }
 
+.header {
+  background-color: "#f1f1f1";
+  grid-area: header;
+}
+
 .footer {
   background-color: orange;
   grid-area: footer;

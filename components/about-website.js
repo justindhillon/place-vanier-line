@@ -1,10 +1,10 @@
 export default function AboutWebsite() {
     return (
         <div class="container">
-            <div style={{background: "#f1f1f1"}}>
+            <div class="header">
                 <br />
                 <br />
-                <p style={{width: "90%", margin: "auto", flex: "1 1 auto"}}>
+                <p style={{width: "90%", margin: "auto"}}>
                     This project is created with the goal of solving rush hour at place vanier.
                     There is a poster at the place vanier food hall, which you can scan when you are stuck in line.
                     Once recorded, it will update the graph on the website, so others can see when it is the most busy.
@@ -14,7 +14,7 @@ export default function AboutWebsite() {
                 <br />
             </div>
 
-            <div class="sub_div">
+            <div class="footer">
                 <p>Learn More <a href="https://placevanierline.vercel.app/about-me">About Me</a></p>
                 <br />
             </div>
