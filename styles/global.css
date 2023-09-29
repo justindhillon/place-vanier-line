@@ -14,7 +14,7 @@
 }
 
 .sub_div {
-  flex: 0 1 100px;
+  flex: 0 1 auto;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
