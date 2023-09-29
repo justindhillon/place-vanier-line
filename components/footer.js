@@ -1,8 +1,7 @@
 export default function Footer() {
     return (
-        <div style={{position:"fixed"}}>
-            <p>Learn More</p> 
-            <a href="https://placevanierline.vercel.app/about-me">About Me</a>
+        <div className="footer">
+            <p>Learn More <a href="https://placevanierline.vercel.app/about-me">About Me</a></p>
         </div>
     )
 }
