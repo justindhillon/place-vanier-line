@@ -11,10 +11,11 @@
 }
 
 #bottom {
+  height: 100px; 
+  width:100%;
   position: absolute;
-  background: gray;
-  width: 100%;
-  bottom: 0;
+  left: 0;
+  bottom: 0; 
 }
 
 #search {
