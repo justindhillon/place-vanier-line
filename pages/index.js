@@ -10,10 +10,6 @@ export default function Homepage() {
       <LineChart />
       <br />
       <AboutWebsite />
-      <div class="footer">
-        <p>Learn More <a href="https://placevanierline.vercel.app/about-me">About Me</a></p>
-        <br />
-      </div>
     </div>
   );
 }
