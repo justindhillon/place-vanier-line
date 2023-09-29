@@ -11,6 +11,9 @@ export default function AboutWebsite() {
             </p>
             <br />
             <br />
+            <div>
+                <p>Made with <span style="color:#2596be;">♥</span> by <a href="https://placevanierline.vercel.app/about-me"><span style="color:#2596be;">Justin Dhillon</span></a></p>
+            </div>
         </div>
     )
 }
