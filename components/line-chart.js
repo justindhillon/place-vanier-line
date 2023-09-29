@@ -34,5 +34,5 @@ export default function LineChart () {
     maintainAspectRatio: false,
   }
 
-  return <div><br /><div class="chart-container"><Line data={data} options={options} /></div></div>
+  return <div class="chart-container"><Line data={data} options={options} /></div>
 }

@@ -1,8 +1,8 @@
 export default function AboutWebsite() {
     return (
         <div style={{textAlign: "center"}}>
+            <br />
             <div style={{background:"#f1f1f1"}}>
-                <br />
                 <br />
                 <br />
                 <p style={{width: "90%", margin: "auto"}}>
