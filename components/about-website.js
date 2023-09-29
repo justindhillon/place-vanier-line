@@ -1,6 +1,6 @@
 export default function AboutWebsite() {
     return (
-        <div id="bottom-stuff">
+        <div class="main_div">
             <div style={{background: "#f1f1f1"}}>
                 <br />
                 <br />
@@ -14,7 +14,7 @@ export default function AboutWebsite() {
                 <br />
             </div>
 
-            <div id="bottom">
+            <div class="sub_div">
                 <p>Learn More <a href="https://placevanierline.vercel.app/about-me">About Me</a></p>
                 <br />
             </div>

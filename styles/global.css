@@ -6,15 +6,17 @@
   max-width: 150vh;
 }
 
-#bottom-stuff {
+.main_div {
+  text-align:center;
   position: relative;
+  left: 100px;
+  height: 200px;
+  width: 500px;
+  background-color: green;
 }
-
-#bottom {
-  height: 100px; 
-  width: 100%;
+.sub_div {
   position: absolute;
-  bottom: 0; 
+  bottom: 0px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
