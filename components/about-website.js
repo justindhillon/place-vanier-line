@@ -1,7 +1,7 @@
 export default function AboutWebsite() {
     return (
         <div id="bottom-stuff">
-            <div id="search">
+            <div style={{background: "#f1f1f1"}}>
                 <br />
                 <br />
                 <p style={{width: "90%", margin: "auto"}}>
