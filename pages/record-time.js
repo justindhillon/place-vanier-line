@@ -6,9 +6,7 @@ export default function Homepage() {
   return (
     <div style={{overflow: "scroll"}}>
       <Navbar />
-      <br />
       <Button />
-      <br /><br /><br /><br /><br />
       <AboutWebsite />
     </div>
   );

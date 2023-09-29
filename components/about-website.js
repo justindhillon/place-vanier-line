@@ -4,6 +4,7 @@ export default function AboutWebsite() {
             <div style={{background:"#f1f1f1"}}>
                 <br />
                 <br />
+                <br />
                 <p style={{width: "90%", margin: "auto"}}>
                     This project is created with the goal of solving rush hour at place vanier.
                     There is a poster at the place vanier food hall, which you can scan when you are stuck in line.
@@ -13,6 +14,7 @@ export default function AboutWebsite() {
                 <br />
                 <br />
             </div>
+            <br />
             <div>
                 <p>Made with <span style={{color:"#2596be"}}>♥</span> by <a href="https://placevanierline.vercel.app/about-me"><span style={{color:"#2596be"}}>Justin Dhillon</span></a></p>
             </div>

@@ -6,9 +6,7 @@ export default function Homepage() {
   return (
     <div style={{height:"100vh"}}>
       <Navbar />
-      <br />
       <LineChart />
-      <br />
       <AboutWebsite />
     </div>
   );
