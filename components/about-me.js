@@ -15,6 +15,7 @@ export default function AboutMe() {
                     <br />
                     <br />
                     <br />
+                    <br />
                 </div>
                 <div class="text" style={{ textAlign: "left" }}>
                     <h1 style={{ color: "#2596be" }}>Justin Dhillon</h1>
