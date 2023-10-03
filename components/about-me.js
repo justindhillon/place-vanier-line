@@ -3,7 +3,8 @@ import profile from '../public/images/profile.jpg';
 export default function AboutMe() {
     return (
         <div>
-            <table>
+            <br />
+            <table style={{background:"#f1f1f1"}}>
                 <tr>
                     <td>
                         <img src={profile} alt="Profile" />;
@@ -23,10 +24,10 @@ export default function AboutMe() {
                 </tr>
             </table>
             <div style={{textAlign:"center"}}>
-            <br /><br />
-            <p>Back to <a href="https://placevanierline.vercel.app/"><span style={{color:"#2596be"}}>Graph</span></a></p>
-            <br /><br />
-        </div>
+                <br /><br />
+                <p>Back to <a href="https://placevanierline.vercel.app/"><span style={{color:"#2596be"}}>Graph</span></a></p>
+                <br /><br />
+            </div>
         </div>
     )
 }
