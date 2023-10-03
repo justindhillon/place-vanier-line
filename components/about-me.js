@@ -11,14 +11,15 @@ export default function AboutMe() {
                 <div>
                     <Image class="image" src={profile} alt="Profile" />
                     <br />
+                    <br />
                 </div>
-                <div style={{textAlign:"left"}}>
+                <div class="text" style={{textAlign:"left"}}>
                     <h1 style={{color:"#2596be"}}>Justin Dhillon</h1>
                     <br />
-                    <ul class="text">
+                    <ul>
                         <li>🎓 University of British Columbia CPSC 2028</li>
                         <li>🧑‍💻 Computer Science Nerd</li>
-                        <li>🐧Linux Enthusiast</li>
+                        <li>🐧 Linux Enthusiast</li>
                         <li>🇨🇦 Vancouver, Canada</li>
                         <br />
                         <li><a style={{color:"#2596be"}} href='https://github.com/justindhillon/place-vanier-line'>&lt;/&gt; Source Code</a></li>
