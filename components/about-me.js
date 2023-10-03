@@ -1,4 +1,4 @@
-import profile from '../public/profile.jpg';
+import profile from '../public/images/profile.jpg';
 
 export default function AboutMe() {
     return (
