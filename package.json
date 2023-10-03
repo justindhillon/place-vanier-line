@@ -19,6 +19,8 @@
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "run-script": "^0.1.1",
+    "sitemap": "^7.1.1",
+    "stream": "^0.0.2",
     "swr": "^2.2.2"
   },
   "engines": {
