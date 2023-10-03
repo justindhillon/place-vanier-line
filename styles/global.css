@@ -21,6 +21,10 @@
   height: 32em;
 }
 
+.text {
+  margin-left: 20px
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
 * {
   margin: 0;
@@ -93,6 +97,9 @@ nav{
 @media screen and (min-width: 768px) {
   .about-me {
     flex-direction: row;
+  }
+  .text {
+    margin-left: 20px
   }
   .nav__menu-bar{
     display: none;
