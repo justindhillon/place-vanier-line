@@ -5,7 +5,7 @@ export default function AboutMe() {
     return (
         <div>
             <br />
-            <table style={{background:"#f1f1f1"}}>
+            <table class="about-me">
                 <tr>
                     <td>
                         <Image src={profile} alt="Profile" />;
