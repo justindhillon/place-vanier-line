@@ -15,6 +15,7 @@
 .image {
   border-radius: 50%;
   width: 32em;
+  max-width: 80%;
   height: 32em;
 }
 
