@@ -5,10 +5,10 @@ export default function AboutMe() {
         <div>
             <table>
                 <tr>
-                    <div>
+                    <td>
                         <img src={profile} alt="Profile" />;
-                    </div>
-                    <div>
+                    </td>
+                    <td>
                         <h1>Justin Dhillon</h1>
                         <ul>
                             <li>👋 Hi, I’m @justindhillon</li>
@@ -18,7 +18,7 @@ export default function AboutMe() {
                             <li>🇨🇦 Vancouver, Canada</li>
                             <li>📫 justin.singh.dhillon@gmail.com</li>
                         </ul>
-                    </div>
+                    </td>
                 </tr>
             </table>
         </div>
