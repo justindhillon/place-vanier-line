@@ -14,7 +14,8 @@
 
 .image {
   border-radius: 50%;
-  width: 8em;
+  width: 32em;
+  height: 32em;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
