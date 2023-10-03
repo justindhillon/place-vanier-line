@@ -7,11 +7,12 @@ export default function AboutMe() {
             <br />
             <br />
             <div style={{ background: "#f1f1f1" }} class="about-me">
-                <br />
                 <div>
                     <br />
                     <br />
+                    <br />
                     <Image class="image" src={profile} alt="Profile" />
+                    <br />
                     <br />
                     <br />
                 </div>
