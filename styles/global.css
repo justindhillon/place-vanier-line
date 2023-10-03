@@ -9,7 +9,7 @@
 .about-me {
   text-align: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .image {
@@ -89,7 +89,7 @@ nav{
 
 @media screen and (min-width: 768px) {
   .about-me {
-    flex-direction: column;
+    flex-direction: row;
   }
   .nav__menu-bar{
     display: none;
