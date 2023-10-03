@@ -10,7 +10,7 @@ export default function AboutMe() {
                     <td>
                         <Image width={500} class="image" src={profile} alt="Profile" />;
                     </td>
-                    <td>
+                    <td style={{textAlign:"left"}}>
                         <h1 style={{color:"#2596be"}}>Justin Dhillon</h1>
                         <ul>
                             <li>🎓 University of British Columbia CPSC 2028</li>
