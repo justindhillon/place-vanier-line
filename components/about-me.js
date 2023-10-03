@@ -2,7 +2,6 @@ import profile from '../public/images/profile.jpg';
 import Image from 'next/image';
 
 export default function AboutMe() {
-    console.log(fetch("https://placevanierline.vercel.app/create-sitemap"));
     return (
         <div>
             <br />

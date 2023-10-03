@@ -10,6 +10,6 @@ export default async function handler(request, response) {
 
     // Return a promise that resolves with your XML string
     return streamToPromise(Readable.from(links).pipe(stream)).then((data) =>
-        data.toString()
+        data.toString().json()
     )
 }
