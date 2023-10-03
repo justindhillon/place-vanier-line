@@ -10,6 +10,7 @@ export default function AboutMe() {
                 <br />
                 <div>
                     <Image class="image" src={profile} alt="Profile" />
+                    <br />
                 </div>
                 <div style={{textAlign:"left"}}>
                     <h1 style={{color:"#2596be"}}>Justin Dhillon</h1>
