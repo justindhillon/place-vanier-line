@@ -22,7 +22,11 @@
 }
 
 .text {
-  margin-left: 2em;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
@@ -97,9 +101,6 @@ nav{
 @media screen and (min-width: 768px) {
   .about-me {
     flex-direction: row;
-  }
-  .text {
-    margin-left: 10em;
   }
   .nav__menu-bar{
     display: none;
