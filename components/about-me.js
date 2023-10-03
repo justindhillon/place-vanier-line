@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function AboutMe() {
     return (
         <div>
-            <br />
+            <br /><br />
             <table style={{background:"#f1f1f1"}} class="about-me">
                 <tr>
                     <td>
