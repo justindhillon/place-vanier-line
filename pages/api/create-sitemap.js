@@ -9,7 +9,9 @@ export default async function handler(request, response) {
     const stream = new SitemapStream( { hostname: 'https://...' } )
 
     // Return a promise that resolves with your XML string
-    return streamToPromise(Readable.from(links).pipe(stream)).then((data) =>
-        data.toString().json()
+    const result = streamToPromise(Readable.from(links).pipe(stream)).then((data) =>
+        data.toString()
     )
+
+    return response.status(200).json({ result });
 }
