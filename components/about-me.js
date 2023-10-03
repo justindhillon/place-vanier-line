@@ -5,7 +5,6 @@ export default function AboutMe() {
     return (
         <div>
             <br />
-            <h1 style={{fontSize: "3em", textAlign: 'center', color: "#2596be"}}>About Me</h1>
             <br />
             <table style={{background:"#f1f1f1"}} class="about-me">
                 <br />
