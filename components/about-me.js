@@ -8,7 +8,7 @@ export default function AboutMe() {
             <table class="about-me">
                 <tr>
                     <td>
-                        <Image class="image" src={profile} alt="Profile" />;
+                        <Image width="8em" class="image" src={profile} alt="Profile" />;
                     </td>
                     <td>
                         <h1 style={{color:"#2596be"}}>Justin Dhillon</h1>
