@@ -6,10 +6,15 @@ import Footer from '../components/footer';
 export default function Homepage() {
   return (
     <div>
-      <Navbar />
-      <LineChart />
-      <AboutWebsite />
-      <Footer />
+      <Head>
+      <meta name="google-site-verification" content="59zk-yCC5eo9gEGfyEefz3nXxRqeDVqIMpB150ddFBk" />
+      </Head>
+      <div>
+        <Navbar />
+        <LineChart />
+        <AboutWebsite />
+        <Footer />
+      </div>
     </div>
   );
 }
