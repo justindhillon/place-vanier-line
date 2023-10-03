@@ -7,15 +7,10 @@ import Head from 'next/head';
 export default function Homepage() {
   return (
     <div>
-      <Head>
-        <meta name="google-site-verification" content="59zk-yCC5eo9gEGfyEefz3nXxRqeDVqIMpB150ddFBk" />
-      </Head>
-      <div>
-        <Navbar />
-        <LineChart />
-        <AboutWebsite />
-        <Footer />
-      </div>
+      <Navbar />
+      <LineChart />
+      <AboutWebsite />
+      <Footer />
     </div>
   );
 }
