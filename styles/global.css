@@ -100,6 +100,7 @@ nav{
   }
   .text {
     margin-left: 10em;
+    margin-top: 10em;
   }
   .nav__menu-bar{
     display: none;
