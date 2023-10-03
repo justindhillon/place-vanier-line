@@ -22,6 +22,11 @@ export default function AboutMe() {
                     </td>
                 </tr>
             </table>
+            <div style={{textAlign:"center"}}>
+            <br /><br />
+            <p>Back to <a href="https://placevanierline.vercel.app/"><span style={{color:"#2596be"}}>Graph</span></a></p>
+            <br /><br />
+        </div>
         </div>
     )
 }
