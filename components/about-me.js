@@ -4,11 +4,11 @@ import Image from 'next/image';
 export default function AboutMe() {
     return (
         <div>
-            <br />
-            <br />
             <div style={{background:"#f1f1f1"}} class="about-me">
                 <br />
                 <div>
+                    <br />
+                    <br />
                     <Image class="image" src={profile} alt="Profile" />
                     <br />
                     <br />
