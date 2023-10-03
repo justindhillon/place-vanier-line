@@ -1,4 +1,5 @@
 import profile from '../public/images/profile.jpg';
+import Image from 'next/image';
 
 export default function AboutMe() {
     return (
@@ -7,7 +8,7 @@ export default function AboutMe() {
             <table style={{background:"#f1f1f1"}}>
                 <tr>
                     <td>
-                        <img src={profile} alt="Profile" />;
+                        <Image src={profile} alt="Profile" />;
                     </td>
                     <td>
                         <h1 style={{color:"#2596be"}}>Justin Dhillon</h1>
