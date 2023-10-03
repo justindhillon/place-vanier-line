@@ -9,6 +9,8 @@
 .about-me {
   width: 100vw;
   text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .image {
@@ -85,7 +87,11 @@ nav{
   justify-content: center;
   align-items: center;
 }
+
 @media screen and (min-width: 768px) {
+  .about-me {
+    flex-direction: column;
+  }
   .nav__menu-bar{
     display: none;
   }
