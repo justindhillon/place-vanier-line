@@ -6,7 +6,7 @@ export default function AboutMe() {
         <div>
             <br />
             <br />
-            <div style={{background:"#f1f1f1"}} class="about-me">
+            <div style={{ background: "#f1f1f1" }} class="about-me">
                 <br />
                 <div>
                     <br />
@@ -15,8 +15,8 @@ export default function AboutMe() {
                     <br />
                     <br />
                 </div>
-                <div class="text" style={{textAlign:"left"}}>
-                    <h1 style={{color:"#2596be"}}>Justin Dhillon</h1>
+                <div class="text" style={{ textAlign: "left" }}>
+                    <h1 style={{ color: "#2596be" }}>Justin Dhillon</h1>
                     <br />
                     <ul>
                         <li>🎓 University of British Columbia CPSC 2028</li>
@@ -24,16 +24,16 @@ export default function AboutMe() {
                         <li>🐧 Linux Enthusiast</li>
                         <li>🇨🇦 Vancouver, Canada</li>
                         <br />
-                        <li><a style={{color:"#2596be"}} href='https://github.com/justindhillon/place-vanier-line'>&lt;/&gt; Source Code</a></li>
-                        <li><a style={{color:"#2596be"}} href='https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=justin.singh.dhillon@gmail.com'>📫 Email</a></li>
-                        <li><a style={{color:"#2596be"}} href='https://twitter.com/justindhillon0'>🐦 Twitter</a></li>
+                        <li><a style={{ color: "#2596be" }} href='https://github.com/justindhillon/place-vanier-line'>&lt;/&gt; Source Code</a></li>
+                        <li><a style={{ color: "#2596be" }} href='https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=justin.singh.dhillon@gmail.com'>📫 Email</a></li>
+                        <li><a style={{ color: "#2596be" }} href='https://twitter.com/justindhillon0'>🐦 Twitter</a></li>
                     </ul>
                 </div>
-                <br />
-            </div>
-            <div style={{textAlign:"center"}}>
                 <br /><br />
-                <p>Back to <a href="https://placevanierline.vercel.app/"><span style={{color:"#2596be"}}>Graph</span></a></p>
+            </div>
+            <div style={{ textAlign: "center" }}>
+                <br /><br />
+                <p>Back to <a href="https://placevanierline.vercel.app/"><span style={{ color: "#2596be" }}>Graph</span></a></p>
                 <br /><br />
             </div>
         </div>
