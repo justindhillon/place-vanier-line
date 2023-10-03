@@ -99,7 +99,7 @@ nav{
     flex-direction: row;
   }
   .text {
-    margin-left: 4em;
+    margin-left: 10em;
   }
   .nav__menu-bar{
     display: none;
