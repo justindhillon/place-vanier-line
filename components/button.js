@@ -44,6 +44,6 @@ export default function Button() {
   
     return (
       (pressable && button)
-      (!pressable && noButton)
+      (pressable && noButton)
     );
 }
