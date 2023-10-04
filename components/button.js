@@ -30,8 +30,20 @@ export default function Button() {
         </div>
       </div>
     )
+
+    const noButton = (
+      <div>
+        <br /><br />
+        <div class={styles.buttonContainer}>
+          <br /><br /><br />
+          <h1 style={{fontSize: "3em"}}>Stuck in line?</h1>
+          <br /><br />
+        </div>
+      </div>
+    )
   
     return (
       (pressable && button)
+      (!pressable && noButton)
     );
 }
