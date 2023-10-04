@@ -1,14 +1,14 @@
 import styles from './button.module.css';
-import { NextResponse, NextRequest } from 'next/server';
+import cookieCutter from 'cookie-cutter';
 
 export default function Button() {
     function handleClick() {
       fetch("https://placevanierline.vercel.app/api/add");
     }
 
-    NextResponse.cookies.set('time', '15:00');
+    cookieCutter.set('time', '15:00');
 
-    //console.log(NextRequest.cookies.get('time')?.value);
+    console.log(cookieCutter.get('time'));
   
     return (
       <div>
