@@ -1,5 +1,5 @@
 import styles from './button.module.css';
-import { setCookie, getCookie } from 'cookies-next';
+import { setCookie, getCookie, getCookies } from 'cookies-next';
 
 export default function Button() {
     function handleClick() {
@@ -8,7 +8,7 @@ export default function Button() {
 
     setCookie('time', '15:00');
     console.log(getCookie('time'));
-    console.log(getCookie());
+    console.log(getCookies());
   
     return (
       <div>
