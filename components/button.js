@@ -45,9 +45,9 @@ export default function Button() {
             <h1 style={{fontSize: "2em"}}>Thanks for the response!</h1>
             <br /><br />
             <h1 style={{fontSize: "2em"}}>Come back later</h1>
+            <br /><br /><br />
+            <p>Back to <a href="https://placevanierline.vercel.app/"><span style={{ color: "#2596be" }}>Graph</span></a></p>
             <br /><br />
-              <p>Back to <a href="https://placevanierline.vercel.app/"><span style={{ color: "#2596be" }}>Graph</span></a></p>
-              <br /><br />
           </div>
         </div>
       );
