@@ -1,9 +1,14 @@
 import styles from './button.module.css'
+import { NextRequest, NextResponse } from 'next/server';
 
 export default function Button() {
     function handleClick() {
       fetch("https://placevanierline.vercel.app/api/add");
     }
+
+    requestAnimationFrame.cookies.set('time', '15:00');
+
+    console.log(request.cookies.get('time')?.value)
   
     return (
       <div>
