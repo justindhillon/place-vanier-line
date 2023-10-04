@@ -6,9 +6,9 @@ export default function Button() {
       fetch("https://placevanierline.vercel.app/api/add");
     }
 
-    requestAnimationFrame.cookies.set('time', '15:00');
+    response.cookies.set('time', '15:00');
 
-    console.log(request.cookies.get('time')?.value)
+    console.log(request.cookies.get('time')?.value);
   
     return (
       <div>
