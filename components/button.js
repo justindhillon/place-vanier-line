@@ -1,14 +1,12 @@
 import styles from './button.module.css';
-var cookie = require('cookie-cutter');
 
 export default function Button() {
     function handleClick() {
       fetch("https://placevanierline.vercel.app/api/add");
     }
 
-    cookieCutter.set('time', '15:00');
-
-    console.log(cookieCutter.get('time'));
+    document.cookie = "time=15:00";
+    console.log(document.cookie);
   
     return (
       <div>
