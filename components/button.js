@@ -13,8 +13,8 @@ export default function Button() {
     }
 
     console.log(getCookie('time'));
-  
-    return (
+
+    const button = (
       <div>
         <br /><br />
         <div class={styles.buttonContainer}>
@@ -27,5 +27,9 @@ export default function Button() {
           <br /><br /><br /><br />
         </div>
       </div>
+    )
+  
+    return (
+      (true && button)
     );
 }
