@@ -14,6 +14,8 @@ export default function Button() {
 
     console.log(getCookie('time'));
 
+    let pressable = true;
+
     const button = (
       <div>
         <br /><br />
@@ -30,6 +32,6 @@ export default function Button() {
     )
   
     return (
-      (true && button)
+      (pressable && button)
     );
 }
