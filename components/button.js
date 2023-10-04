@@ -5,6 +5,7 @@ export default function Button() {
     function handleClick() {
       const time = fetch("https://placevanierline.vercel.app/api/add");
       setCookie('time', time);
+      console.log(time);
     }
 
     console.log(getCookie('time'));
