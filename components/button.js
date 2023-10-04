@@ -8,6 +8,7 @@ export default function Button() {
 
     setCookie('time', '15:00');
     console.log(getCookie('time'));
+    console.log(getCookie());
   
     return (
       <div>
