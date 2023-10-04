@@ -41,7 +41,7 @@ export default function Button() {
         <div>
           <br /><br />
           <div class={styles.buttonContainer}>
-            <br /><br /><br />
+            <br /><br />
             <h1 style={{fontSize: "2em"}}>Thanks for the response!</h1>
             <br /><br />
             <h1 style={{fontSize: "2em"}}>Come back later</h1>
