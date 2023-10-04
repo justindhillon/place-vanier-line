@@ -5,8 +5,7 @@ import { setCookie, getCookie } from 'cookies-next';
 export default function Button() {
     async function fetchData() {
       const res = await axios.get('https://placevanierline.vercel.app/api/add'); 
-      setCookie('time', res);
-      console.log(res);
+      setCookie('time', res.data);
     }
 
     function handleClick() {
