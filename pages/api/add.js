@@ -31,5 +31,5 @@ export default async function handler(request, response) {
         await sql`UPDATE Database SET Value = Value::DECIMAL + 1 WHERE Time = ${time};`;
     }
 
-    return response.status(200).end("meems");
+    return response.status(200).end(time);
 }
