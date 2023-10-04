@@ -12,9 +12,7 @@ export default function Button() {
       fetchData();
     }
 
-    let pressable = true;
-
-    if (pressable) {
+    if (getCookie('time') == "16:15") {
       return (
         <div>
           <br /><br />
@@ -22,21 +20,23 @@ export default function Button() {
             <br /><br /><br />
             <h1 style={{fontSize: "3em"}}>Stuck in line?</h1>
             <br /><br />
-            <a>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <br /><br />
+          <div class={styles.buttonContainer}>
+            <br /><br /><br />
+            <h1 style={{fontSize: "3em"}}>Stuck in line?</h1>
+            <br /><br />
+            <a href='https://placevanierline.vercel.app/'>
               <button class={styles.button} onClick={handleClick}>PRESS ME</button>
             </a>
             <br /><br /><br /><br />
           </div>
         </div>
-      );
-    } else {
-      <div>
-        <br /><br />
-        <div class={styles.buttonContainer}>
-          <br /><br /><br />
-          <h1 style={{fontSize: "3em"}}>Stuck in line?</h1>
-          <br /><br />
-        </div>
-      </div>
+      )
     }
 }
