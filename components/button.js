@@ -12,38 +12,31 @@ export default function Button() {
       fetchData();
     }
 
-    console.log(getCookie('time'));
-
     let pressable = true;
 
-    const button = (
+    if (pressable) {
+      return (
+        <div>
+          <br /><br />
+          <div class={styles.buttonContainer}>
+            <br /><br /><br />
+            <h1 style={{fontSize: "3em"}}>Stuck in line?</h1>
+            <br /><br />
+            <a>
+              <button class={styles.button} onClick={handleClick}>PRESS ME</button>
+            </a>
+            <br /><br /><br /><br />
+          </div>
+        </div>
+      );
+    } else {
       <div>
         <br /><br />
         <div class={styles.buttonContainer}>
           <br /><br /><br />
           <h1 style={{fontSize: "3em"}}>Stuck in line?</h1>
           <br /><br />
-          <a>
-            <button class={styles.button} onClick={handleClick}>PRESS ME</button>
-          </a>
-          <br /><br /><br /><br />
         </div>
       </div>
-    )
-
-    const noButton = (
-      <div>
-        <br /><br />
-        <div class={styles.buttonContainer}>
-          <br /><br /><br />
-          <h1 style={{fontSize: "3em"}}>Stuck in line?</h1>
-          <br /><br />
-        </div>
-      </div>
-    )
-  
-    return (
-      (pressable && button)
-      (pressable && noButton)
-    );
+    }
 }
