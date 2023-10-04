@@ -1,4 +1,5 @@
 import styles from './button.module.css';
+import axios from "axios";
 import { setCookie, getCookie } from 'cookies-next';
 
 export default function Button() {
