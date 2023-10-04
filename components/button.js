@@ -8,7 +8,7 @@ export default function Button() {
 
     response.cookies.set('time', '15:00');
 
-    console.log(request.cookies.get('time')?.value);
+    console.log(NextRequest.cookies.get('time')?.value);
   
     return (
       <div>
