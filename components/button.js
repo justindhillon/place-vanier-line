@@ -2,6 +2,30 @@ import styles from './button.module.css';
 import axios from "axios";
 import { setCookie, getCookie } from 'cookies-next';
 
+function getCurrentTime(separator=''){
+  let newDate = new Date()
+  let hour = newDate.getUTCHours() + 17;
+  let minute = newDate.getMinutes();
+
+  minute = (Math.round(minute/15) * 15);
+
+  if (minute == 60) {
+      minute = 0;
+      hour++;
+  }
+
+  hour = hour % 24;
+
+  if (hour < 7 || 21 < hour) {
+      return "invalid";
+  }
+
+  let formattedHour = hour.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })
+  let formattedMinute = minute.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })
+  
+  return formattedHour.toString() + ":" + formattedMinute.toString();
+}
+
 export default function Button() {
     async function fetchData() {
       const res = await axios.get('https://placevanierline.vercel.app/api/add'); 
@@ -12,7 +36,7 @@ export default function Button() {
       fetchData();
     }
 
-    if (getCookie('time') == "16:15") {
+    if (getCookie('time') == getCurrentTime()) {
       return (
         <div>
           <br /><br />
