@@ -7,7 +7,6 @@ export default function Button() {
       setCookie('time', time);
     }
 
-    setCookie('time', '15:00');
     console.log(getCookie('time'));
   
     return (
