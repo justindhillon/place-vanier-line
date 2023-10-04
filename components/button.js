@@ -1,5 +1,5 @@
 import styles from './button.module.css';
-import cookieCutter from 'cookie-cutter';
+var cookie = require('cookie-cutter');
 
 export default function Button() {
     function handleClick() {
