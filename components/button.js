@@ -1,14 +1,14 @@
 import styles from './button.module.css';
-import { setCookie, getCookie, getCookies } from 'cookies-next';
+import { setCookie, getCookie } from 'cookies-next';
 
 export default function Button() {
     function handleClick() {
-      fetch("https://placevanierline.vercel.app/api/add");
+      const time = fetch("https://placevanierline.vercel.app/api/add");
+      setCookie('time', time);
     }
 
     setCookie('time', '15:00');
     console.log(getCookie('time'));
-    console.log(getCookies());
   
     return (
       <div>
