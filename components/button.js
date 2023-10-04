@@ -42,8 +42,12 @@ export default function Button() {
           <br /><br />
           <div class={styles.buttonContainer}>
             <br /><br /><br />
-            <h1 style={{fontSize: "3em"}}>Stuck in line?</h1>
+            <h1 style={{fontSize: "2em"}}>Thanks for the response!</h1>
             <br /><br />
+            <h1 style={{fontSize: "2em"}}>Come back later</h1>
+            <br /><br />
+              <p>Back to <a href="https://placevanierline.vercel.app/"><span style={{ color: "#2596be" }}>Graph</span></a></p>
+              <br /><br />
           </div>
         </div>
       );
