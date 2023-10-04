@@ -1,5 +1,5 @@
-import styles from './button.module.css'
-import { NextRequest, NextResponse } from 'next/server';
+import styles from './button.module.css';
+import { NextResponse, NextRequest } from 'next/server';
 
 export default function Button() {
     function handleClick() {
