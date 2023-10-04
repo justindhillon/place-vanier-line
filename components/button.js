@@ -6,7 +6,7 @@ export default function Button() {
       fetch("https://placevanierline.vercel.app/api/add");
     }
 
-    response.cookies.set('time', '15:00');
+    NextResponse.cookies.set('time', '15:00');
 
     console.log(NextRequest.cookies.get('time')?.value);
   
