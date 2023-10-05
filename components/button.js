@@ -28,7 +28,7 @@ function getCurrentTime(separator=''){
 
 export default function Button() {
     async function fetchData() {
-      const res = await axios.get('https://placevanierline.vercel.app/api/add'); 
+      const res = await axios.get('https://placevanierline.vercel.app/api/add', {body: getCurrentTime()}); 
       setCookie('time', res.data);
     }
 
