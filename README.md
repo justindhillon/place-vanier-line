@@ -13,10 +13,10 @@ I am a first year student at UBC, and I'm loving it. But there is always a line 
 ## Development
 ```bash
 $ # Clone the sources
-$ git clone https://github.com/justindhillon/ubcevents
+$ git clone https://github.com/justindhillon/place-vanier-line
 $
 $ # Run the application
-$ cd ubcevents && npm run dev
+$ cd place-vaneir-line && npm run dev
 $
 $ # Start the application at https://localhost:3000.
 ```
