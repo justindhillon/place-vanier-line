@@ -16,7 +16,7 @@ $ # Clone the sources
 $ git clone https://github.com/justindhillon/place-vanier-line
 $
 $ # Run the application
-$ cd place-vaneir-line && npm run dev
+$ cd place-vaneir-line && npm install && npm run dev
 $
 $ # Start the application at https://localhost:3000.
 ```
