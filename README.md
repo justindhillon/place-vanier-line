@@ -21,6 +21,6 @@ $
 $ # Start the application at https://localhost:3000.
 ```
 
-## Creddit
+## Credits
 - [Next.js Docs](https://nextjs.org/docs)
 - [Chart.js Docs](https://www.chartjs.org/docs/latest/)
